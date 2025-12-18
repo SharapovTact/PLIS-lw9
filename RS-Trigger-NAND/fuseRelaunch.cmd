@@ -1,0 +1,1 @@
+-intstyle "ise" -incremental -lib "unisims_ver" -lib "unimacro_ver" -lib "xilinxcorelib_ver" -lib "secureip" -o "D:/Study/PLIS/PLIS-lw9/RS-Trigger-NAND/RS_Trigger_XOR_RS_Trigger_XOR_sch_tb_isim_beh.exe" -prj "D:/Study/PLIS/PLIS-lw9/RS-Trigger-NAND/RS_Trigger_XOR_RS_Trigger_XOR_sch_tb_beh.prj" "work.RS_Trigger_XOR_RS_Trigger_XOR_sch_tb" "work.glbl" 

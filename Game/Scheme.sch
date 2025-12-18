@@ -1,0 +1,187 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<drawing version="7">
+    <attr value="spartan6" name="DeviceFamilyName">
+        <trait delete="all:0" />
+        <trait editname="all:0" />
+        <trait edittrait="all:0" />
+    </attr>
+    <netlist>
+        <signal name="DIGIT_OUT(7:0)" />
+        <signal name="Segs(3:0)" />
+        <signal name="CLK" />
+        <signal name="RST" />
+        <signal name="E" />
+        <signal name="XLXN_13" />
+        <signal name="Win" />
+        <signal name="DB_IN(1:0)" />
+        <signal name="XLXN_29(3:0)" />
+        <signal name="XLXN_32" />
+        <signal name="XLXN_33" />
+        <port polarity="Output" name="DIGIT_OUT(7:0)" />
+        <port polarity="Output" name="Segs(3:0)" />
+        <port polarity="Input" name="CLK" />
+        <port polarity="Input" name="RST" />
+        <port polarity="Input" name="E" />
+        <port polarity="Output" name="Win" />
+        <port polarity="Input" name="DB_IN(1:0)" />
+        <blockdef name="Game_Calc">
+            <timestamp>2025-12-18T22:58:14</timestamp>
+            <rect width="304" x="64" y="-256" height="256" />
+            <line x2="0" y1="-224" y2="-224" x1="64" />
+            <line x2="0" y1="-160" y2="-160" x1="64" />
+            <rect width="64" x="0" y="-108" height="24" />
+            <line x2="0" y1="-96" y2="-96" x1="64" />
+            <rect width="64" x="0" y="-44" height="24" />
+            <line x2="0" y1="-32" y2="-32" x1="64" />
+            <rect width="64" x="368" y="-236" height="24" />
+            <line x2="432" y1="-224" y2="-224" x1="368" />
+        </blockdef>
+        <blockdef name="Number_Decoder">
+            <timestamp>2025-12-18T19:30:4</timestamp>
+            <rect width="256" x="64" y="-64" height="64" />
+            <rect width="64" x="0" y="-44" height="24" />
+            <line x2="0" y1="-32" y2="-32" x1="64" />
+            <rect width="64" x="320" y="-44" height="24" />
+            <line x2="384" y1="-32" y2="-32" x1="320" />
+        </blockdef>
+        <blockdef name="Segs_Const">
+            <timestamp>2025-12-18T19:37:25</timestamp>
+            <rect width="256" x="64" y="-64" height="64" />
+            <rect width="64" x="320" y="-44" height="24" />
+            <line x2="384" y1="-32" y2="-32" x1="320" />
+        </blockdef>
+        <blockdef name="Devider">
+            <timestamp>2025-12-18T19:48:39</timestamp>
+            <rect width="256" x="64" y="-64" height="64" />
+            <line x2="0" y1="-32" y2="-32" x1="64" />
+            <line x2="384" y1="-32" y2="-32" x1="320" />
+        </blockdef>
+        <blockdef name="CAP">
+            <timestamp>2025-12-18T20:33:19</timestamp>
+            <rect width="256" x="64" y="-128" height="128" />
+            <line x2="0" y1="-96" y2="-96" x1="64" />
+            <line x2="0" y1="-32" y2="-32" x1="64" />
+            <line x2="384" y1="-96" y2="-96" x1="320" />
+        </blockdef>
+        <blockdef name="WIN_CHECK">
+            <timestamp>2025-12-18T20:0:18</timestamp>
+            <rect width="256" x="64" y="-64" height="64" />
+            <rect width="64" x="0" y="-44" height="24" />
+            <line x2="0" y1="-32" y2="-32" x1="64" />
+            <line x2="384" y1="-32" y2="-32" x1="320" />
+        </blockdef>
+        <block symbolname="Number_Decoder" name="XLXI_2">
+            <blockpin signalname="XLXN_29(3:0)" name="DIGIT(3:0)" />
+            <blockpin signalname="DIGIT_OUT(7:0)" name="PIN_OUT(7:0)" />
+        </block>
+        <block symbolname="Segs_Const" name="XLXI_4">
+            <blockpin signalname="Segs(3:0)" name="Segs(3:0)" />
+        </block>
+        <block symbolname="Devider" name="XLXI_5">
+            <blockpin signalname="CLK" name="CLK" />
+            <blockpin signalname="XLXN_13" name="Tact" />
+        </block>
+        <block symbolname="CAP" name="XLXI_6">
+            <blockpin signalname="E" name="S_IN" />
+            <blockpin signalname="XLXN_13" name="Tact" />
+            <blockpin signalname="XLXN_33" name="S_OUT" />
+        </block>
+        <block symbolname="CAP" name="XLXI_7">
+            <blockpin signalname="RST" name="S_IN" />
+            <blockpin signalname="XLXN_13" name="Tact" />
+            <blockpin signalname="XLXN_32" name="S_OUT" />
+        </block>
+        <block symbolname="WIN_CHECK" name="XLXI_9">
+            <blockpin signalname="XLXN_29(3:0)" name="DIGIT(3:0)" />
+            <blockpin signalname="Win" name="WIN" />
+        </block>
+        <block symbolname="Game_Calc" name="XLXI_11">
+            <blockpin signalname="XLXN_33" name="E" />
+            <blockpin signalname="XLXN_32" name="RST" />
+            <blockpin signalname="DB_IN(1:0)" name="DB_IN(1:0)" />
+            <blockpin signalname="XLXN_29(3:0)" name="DBM_IN(3:0)" />
+            <blockpin signalname="XLXN_29(3:0)" name="DB_OUT(3:0)" />
+        </block>
+    </netlist>
+    <sheet sheetnum="1" width="3520" height="2720">
+        <instance x="1760" y="1104" name="XLXI_2" orien="R0">
+        </instance>
+        <branch name="DIGIT_OUT(7:0)">
+            <attrtext style="alignment:SOFT-BCENTER;fontsize:28;fontname:Arial" attrname="Name" x="2272" y="1072" type="branch" />
+            <wire x2="2272" y1="1072" y2="1072" x1="2144" />
+            <wire x2="2512" y1="1072" y2="1072" x1="2272" />
+        </branch>
+        <instance x="1760" y="1264" name="XLXI_4" orien="R0">
+        </instance>
+        <branch name="Segs(3:0)">
+            <attrtext style="alignment:SOFT-BCENTER;fontsize:28;fontname:Arial" attrname="Name" x="2256" y="1232" type="branch" />
+            <wire x2="2256" y1="1232" y2="1232" x1="2144" />
+            <wire x2="2512" y1="1232" y2="1232" x1="2256" />
+        </branch>
+        <iomarker fontsize="28" x="2512" y="1232" name="Segs(3:0)" orien="R0" />
+        <branch name="CLK">
+            <wire x2="208" y1="1120" y2="1120" x1="160" />
+        </branch>
+        <iomarker fontsize="28" x="160" y="1120" name="CLK" orien="R180" />
+        <instance x="208" y="1152" name="XLXI_5" orien="R0">
+        </instance>
+        <instance x="400" y="704" name="XLXI_6" orien="R0">
+        </instance>
+        <instance x="400" y="896" name="XLXI_7" orien="R0">
+        </instance>
+        <branch name="RST">
+            <wire x2="400" y1="800" y2="800" x1="336" />
+        </branch>
+        <branch name="E">
+            <wire x2="400" y1="608" y2="608" x1="320" />
+        </branch>
+        <branch name="XLXN_13">
+            <wire x2="400" y1="672" y2="672" x1="176" />
+            <wire x2="176" y1="672" y2="864" x1="176" />
+            <wire x2="176" y1="864" y2="960" x1="176" />
+            <wire x2="656" y1="960" y2="960" x1="176" />
+            <wire x2="656" y1="960" y2="1120" x1="656" />
+            <wire x2="400" y1="864" y2="864" x1="176" />
+            <wire x2="656" y1="1120" y2="1120" x1="592" />
+        </branch>
+        <iomarker fontsize="28" x="320" y="608" name="E" orien="R180" />
+        <iomarker fontsize="28" x="336" y="800" name="RST" orien="R180" />
+        <branch name="Win">
+            <wire x2="2496" y1="864" y2="864" x1="2144" />
+        </branch>
+        <iomarker fontsize="28" x="2496" y="864" name="Win" orien="R0" />
+        <branch name="DB_IN(1:0)">
+            <attrtext style="alignment:SOFT-BCENTER;fontsize:28;fontname:Arial" attrname="Name" x="816" y="1200" type="branch" />
+            <wire x2="816" y1="1200" y2="1200" x1="688" />
+            <wire x2="960" y1="1200" y2="1200" x1="816" />
+            <wire x2="1104" y1="1200" y2="1200" x1="960" />
+        </branch>
+        <iomarker fontsize="28" x="688" y="1200" name="DB_IN(1:0)" orien="R180" />
+        <iomarker fontsize="28" x="2512" y="1072" name="DIGIT_OUT(7:0)" orien="R0" />
+        <instance x="1760" y="896" name="XLXI_9" orien="R0">
+        </instance>
+        <branch name="XLXN_29(3:0)">
+            <wire x2="1104" y1="1264" y2="1264" x1="1040" />
+            <wire x2="1040" y1="1264" y2="1360" x1="1040" />
+            <wire x2="1632" y1="1360" y2="1360" x1="1040" />
+            <wire x2="1600" y1="1072" y2="1072" x1="1536" />
+            <wire x2="1632" y1="1072" y2="1072" x1="1600" />
+            <wire x2="1760" y1="1072" y2="1072" x1="1632" />
+            <wire x2="1632" y1="1072" y2="1360" x1="1632" />
+            <wire x2="1760" y1="864" y2="864" x1="1600" />
+            <wire x2="1600" y1="864" y2="1072" x1="1600" />
+        </branch>
+        <branch name="XLXN_32">
+            <wire x2="944" y1="800" y2="800" x1="784" />
+            <wire x2="944" y1="800" y2="1136" x1="944" />
+            <wire x2="1104" y1="1136" y2="1136" x1="944" />
+        </branch>
+        <branch name="XLXN_33">
+            <wire x2="960" y1="608" y2="608" x1="784" />
+            <wire x2="960" y1="608" y2="1072" x1="960" />
+            <wire x2="1104" y1="1072" y2="1072" x1="960" />
+        </branch>
+        <instance x="1104" y="1296" name="XLXI_11" orien="R0">
+        </instance>
+    </sheet>
+</drawing>

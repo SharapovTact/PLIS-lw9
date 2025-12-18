@@ -1,0 +1,99 @@
+--------------------------------------------------------------------------------
+Release 14.7 Trace  (nt64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+
+C:\Xilinx\14.7\ISE_DS\ISE\bin\nt64\unwrapped\trce.exe -intstyle ise -v 3 -s 3
+-n 3 -fastpaths -xml Scheme.twx Scheme.ncd -o Scheme.twr Scheme.pcf -ucf
+Config.ucf
+
+Design file:              Scheme.ncd
+Physical constraint file: Scheme.pcf
+Device,package,speed:     xc6slx16,csg324,C,-3 (PRODUCTION 1.23 2013-10-13)
+Report level:             verbose report
+
+Environment Variable      Effect 
+--------------------      ------ 
+NONE                      No environment variables were set
+--------------------------------------------------------------------------------
+
+INFO:Timing:2698 - No timing constraints found, doing default enumeration.
+INFO:Timing:3412 - To improve timing, see the Timing Closure User Guide (UG612).
+INFO:Timing:2752 - To get complete path coverage, use the unconstrained paths 
+   option. All paths that are not constrained will be reported in the 
+   unconstrained paths section(s) of the report.
+INFO:Timing:3339 - The clock-to-out numbers in this timing report are based on 
+   a 50 Ohm transmission line loading model.  For the details of this model, 
+   and for more information on accounting for different loading conditions, 
+   please see the device datasheet.
+
+
+
+Data Sheet report:
+-----------------
+All values displayed in nanoseconds (ns)
+
+Setup/Hold to clock ENABLE
+------------+------------+------------+------------+------------+------------------+--------+
+            |Max Setup to|  Process   |Max Hold to |  Process   |                  | Clock  |
+Source      | clk (edge) |   Corner   | clk (edge) |   Corner   |Internal Clock(s) | Phase  |
+------------+------------+------------+------------+------------+------------------+--------+
+DIGIT<0>    |   -0.015(F)|      FAST  |    1.929(F)|      SLOW  |ENABLE_BUFGP      |   0.000|
+DIGIT<1>    |   -0.264(F)|      FAST  |    2.243(F)|      SLOW  |ENABLE_BUFGP      |   0.000|
+NUMBER<0>   |   -1.007(F)|      FAST  |    2.724(F)|      SLOW  |ENABLE_BUFGP      |   0.000|
+NUMBER<1>   |   -0.735(F)|      FAST  |    2.415(F)|      SLOW  |ENABLE_BUFGP      |   0.000|
+NUMBER<2>   |   -0.929(F)|      FAST  |    2.647(F)|      SLOW  |ENABLE_BUFGP      |   0.000|
+NUMBER<3>   |   -0.714(F)|      FAST  |    2.517(F)|      SLOW  |ENABLE_BUFGP      |   0.000|
+------------+------------+------------+------------+------------+------------------+--------+
+
+Clock ENABLE to Pad
+------------+-----------------+------------+-----------------+------------+------------------+--------+
+            |Max (slowest) clk|  Process   |Min (fastest) clk|  Process   |                  | Clock  |
+Destination |  (edge) to PAD  |   Corner   |  (edge) to PAD  |   Corner   |Internal Clock(s) | Phase  |
+------------+-----------------+------------+-----------------+------------+------------------+--------+
+C<1>        |        12.741(F)|      SLOW  |         6.629(F)|      FAST  |ENABLE_BUFGP      |   0.000|
+C<2>        |        12.147(F)|      SLOW  |         6.250(F)|      FAST  |ENABLE_BUFGP      |   0.000|
+C<3>        |        12.116(F)|      SLOW  |         6.284(F)|      FAST  |ENABLE_BUFGP      |   0.000|
+C<4>        |        12.816(F)|      SLOW  |         6.531(F)|      FAST  |ENABLE_BUFGP      |   0.000|
+C<5>        |        12.416(F)|      SLOW  |         6.399(F)|      FAST  |ENABLE_BUFGP      |   0.000|
+C<6>        |        12.604(F)|      SLOW  |         6.367(F)|      FAST  |ENABLE_BUFGP      |   0.000|
+C<7>        |        12.461(F)|      SLOW  |         6.491(F)|      FAST  |ENABLE_BUFGP      |   0.000|
+------------+-----------------+------------+-----------------+------------+------------------+--------+
+
+Clock Oxyllirator to Pad
+------------+-----------------+------------+-----------------+------------+------------------+--------+
+            |Max (slowest) clk|  Process   |Min (fastest) clk|  Process   |                  | Clock  |
+Destination |  (edge) to PAD  |   Corner   |  (edge) to PAD  |   Corner   |Internal Clock(s) | Phase  |
+------------+-----------------+------------+-----------------+------------+------------------+--------+
+ANOD<0>     |         8.414(R)|      SLOW  |         4.313(R)|      FAST  |Oxyllirator_BUFGP |   0.000|
+ANOD<1>     |         8.447(R)|      SLOW  |         4.329(R)|      FAST  |Oxyllirator_BUFGP |   0.000|
+ANOD<2>     |         8.283(R)|      SLOW  |         4.191(R)|      FAST  |Oxyllirator_BUFGP |   0.000|
+ANOD<3>     |         8.316(R)|      SLOW  |         4.207(R)|      FAST  |Oxyllirator_BUFGP |   0.000|
+C<1>        |        10.468(R)|      SLOW  |         5.160(R)|      FAST  |Oxyllirator_BUFGP |   0.000|
+C<2>        |         9.807(R)|      SLOW  |         4.820(R)|      FAST  |Oxyllirator_BUFGP |   0.000|
+C<3>        |         9.941(R)|      SLOW  |         4.722(R)|      FAST  |Oxyllirator_BUFGP |   0.000|
+C<4>        |        10.543(R)|      SLOW  |         4.969(R)|      FAST  |Oxyllirator_BUFGP |   0.000|
+C<5>        |        10.076(R)|      SLOW  |         4.969(R)|      FAST  |Oxyllirator_BUFGP |   0.000|
+C<6>        |        10.331(R)|      SLOW  |         4.805(R)|      FAST  |Oxyllirator_BUFGP |   0.000|
+C<7>        |        10.188(R)|      SLOW  |         5.022(R)|      FAST  |Oxyllirator_BUFGP |   0.000|
+------------+-----------------+------------+-----------------+------------+------------------+--------+
+
+Clock to Setup on destination clock Oxyllirator
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+Oxyllirator    |    3.724|         |         |         |
+---------------+---------+---------+---------+---------+
+
+
+Analysis completed Mon Dec 15 18:36:48 2025 
+--------------------------------------------------------------------------------
+
+Trace Settings:
+-------------------------
+Trace Settings 
+
+Peak Memory Usage: 4554 MB
+
+
+

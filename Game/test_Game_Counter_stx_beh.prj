@@ -1,0 +1,2 @@
+vhdl isim_temp "Game_Calc.vhd"
+vhdl isim_temp "test_Game_Counter.vhd"

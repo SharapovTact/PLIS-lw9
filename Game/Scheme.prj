@@ -1,0 +1,7 @@
+vhdl work "WIN_CHECK.vhd"
+vhdl work "Segs_Const.vhd"
+vhdl work "Number_Decoder.vhd"
+vhdl work "Game_Calc.vhd"
+vhdl work "Devider.vhd"
+vhdl work "CAP.vhd"
+verilog work "Scheme.vf"

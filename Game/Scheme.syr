@@ -1,0 +1,553 @@
+Release 14.7 - xst P.20131013 (nt64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+--> Parameter TMPDIR set to xst/projnav.tmp
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.08 secs
+ 
+--> Parameter xsthdpdir set to xst
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.08 secs
+ 
+--> Reading design: Scheme.prj
+
+TABLE OF CONTENTS
+  1) Synthesis Options Summary
+  2) HDL Parsing
+  3) HDL Elaboration
+  4) HDL Synthesis
+       4.1) HDL Synthesis Report
+  5) Advanced HDL Synthesis
+       5.1) Advanced HDL Synthesis Report
+  6) Low Level Synthesis
+  7) Partition Report
+  8) Design Summary
+       8.1) Primitive and Black Box Usage
+       8.2) Device utilization summary
+       8.3) Partition Resource Summary
+       8.4) Timing Report
+            8.4.1) Clock Information
+            8.4.2) Asynchronous Control Signals Information
+            8.4.3) Timing Summary
+            8.4.4) Timing Details
+            8.4.5) Cross Clock Domains Report
+
+
+=========================================================================
+*                      Synthesis Options Summary                        *
+=========================================================================
+---- Source Parameters
+Input File Name                    : "Scheme.prj"
+Ignore Synthesis Constraint File   : NO
+
+---- Target Parameters
+Output File Name                   : "Scheme"
+Output Format                      : NGC
+Target Device                      : xc6slx16-3-csg324
+
+---- Source Options
+Top Module Name                    : Scheme
+Automatic FSM Extraction           : YES
+FSM Encoding Algorithm             : Auto
+Safe Implementation                : No
+FSM Style                          : LUT
+RAM Extraction                     : Yes
+RAM Style                          : Auto
+ROM Extraction                     : Yes
+Shift Register Extraction          : YES
+ROM Style                          : Auto
+Resource Sharing                   : YES
+Asynchronous To Synchronous        : NO
+Shift Register Minimum Size        : 2
+Use DSP Block                      : Auto
+Automatic Register Balancing       : No
+
+---- Target Options
+LUT Combining                      : Auto
+Reduce Control Sets                : Auto
+Add IO Buffers                     : YES
+Global Maximum Fanout              : 100000
+Add Generic Clock Buffer(BUFG)     : 16
+Register Duplication               : YES
+Optimize Instantiated Primitives   : NO
+Use Clock Enable                   : Auto
+Use Synchronous Set                : Auto
+Use Synchronous Reset              : Auto
+Pack IO Registers into IOBs        : Auto
+Equivalent register Removal        : YES
+
+---- General Options
+Optimization Goal                  : Speed
+Optimization Effort                : 1
+Power Reduction                    : NO
+Keep Hierarchy                     : No
+Netlist Hierarchy                  : As_Optimized
+RTL Output                         : Yes
+Global Optimization                : AllClockNets
+Read Cores                         : YES
+Write Timing Constraints           : NO
+Cross Clock Analysis               : NO
+Hierarchy Separator                : /
+Bus Delimiter                      : <>
+Case Specifier                     : Maintain
+Slice Utilization Ratio            : 100
+BRAM Utilization Ratio             : 100
+DSP48 Utilization Ratio            : 100
+Auto BRAM Packing                  : NO
+Slice Utilization Ratio Delta      : 5
+
+=========================================================================
+
+
+=========================================================================
+*                          HDL Parsing                                  *
+=========================================================================
+Analyzing Verilog file "D:\Study\PLIS\PLIS-lw9\Game\Scheme.vf" into library work
+Parsing module <Scheme>.
+Parsing VHDL file "D:\Study\PLIS\PLIS-lw9\Game\WIN_CHECK.vhd" into library work
+Parsing entity <WIN_CHECK>.
+Parsing architecture <Behavioral> of entity <win_check>.
+Parsing VHDL file "D:\Study\PLIS\PLIS-lw9\Game\Segs_Const.vhd" into library work
+Parsing entity <Segs_Const>.
+Parsing architecture <Behavioral> of entity <segs_const>.
+Parsing VHDL file "D:\Study\PLIS\PLIS-lw9\Game\Number_Decoder.vhd" into library work
+Parsing entity <Number_Decoder>.
+Parsing architecture <Behavioral> of entity <number_decoder>.
+Parsing VHDL file "D:\Study\PLIS\PLIS-lw9\Game\Game_Calc.vhd" into library work
+Parsing entity <Game_Calc>.
+Parsing architecture <Behavioral> of entity <game_calc>.
+Parsing VHDL file "D:\Study\PLIS\PLIS-lw9\Game\Devider.vhd" into library work
+Parsing entity <Devider>.
+Parsing architecture <Behavioral> of entity <devider>.
+Parsing VHDL file "D:\Study\PLIS\PLIS-lw9\Game\CAP.vhd" into library work
+Parsing entity <CAP>.
+Parsing architecture <Behavioral> of entity <cap>.
+
+=========================================================================
+*                            HDL Elaboration                            *
+=========================================================================
+
+Elaborating module <Scheme>.
+Going to vhdl side to elaborate module Number_Decoder
+
+Elaborating entity <Number_Decoder> (architecture <Behavioral>) from library <work>.
+Back to verilog to continue elaboration
+Going to vhdl side to elaborate module Segs_Const
+
+Elaborating entity <Segs_Const> (architecture <Behavioral>) from library <work>.
+Back to verilog to continue elaboration
+Going to vhdl side to elaborate module Devider
+
+Elaborating entity <Devider> (architecture <Behavioral>) from library <work>.
+Back to verilog to continue elaboration
+Going to vhdl side to elaborate module CAP
+
+Elaborating entity <CAP> (architecture <Behavioral>) from library <work>.
+Back to verilog to continue elaboration
+Going to vhdl side to elaborate module CAP
+
+Elaborating entity <CAP> (architecture <Behavioral>) from library <work>.
+WARNING:HDLCompiler:758 - "D:\Study\PLIS\PLIS-lw9\Game\CAP.vhd" Line 32: Replacing existing netlist CAP(Behavioral)
+Back to verilog to continue elaboration
+Going to vhdl side to elaborate module WIN_CHECK
+
+Elaborating entity <WIN_CHECK> (architecture <Behavioral>) from library <work>.
+Back to verilog to continue elaboration
+Going to vhdl side to elaborate module Game_Calc
+
+Elaborating entity <Game_Calc> (architecture <Behavioral>) from library <work>.
+WARNING:HDLCompiler:871 - "D:\Study\PLIS\PLIS-lw9\Game\Game_Calc.vhd" Line 14: Using initial value ('.','.','.','.') for a since it is never assigned
+WARNING:HDLCompiler:871 - "D:\Study\PLIS\PLIS-lw9\Game\Game_Calc.vhd" Line 15: Using initial value ('.','.') for b since it is never assigned
+Back to verilog to continue elaboration
+
+=========================================================================
+*                           HDL Synthesis                               *
+=========================================================================
+
+Synthesizing Unit <Scheme>.
+    Related source file is "D:\Study\PLIS\PLIS-lw9\Game\Scheme.vf".
+    Summary:
+	no macro.
+Unit <Scheme> synthesized.
+
+Synthesizing Unit <Number_Decoder>.
+    Related source file is "D:\Study\PLIS\PLIS-lw9\Game\Number_Decoder.vhd".
+    Found 16x8-bit Read Only RAM for signal <PIN_OUT>
+    Summary:
+	inferred   1 RAM(s).
+Unit <Number_Decoder> synthesized.
+
+Synthesizing Unit <Segs_Const>.
+    Related source file is "D:\Study\PLIS\PLIS-lw9\Game\Segs_Const.vhd".
+    Summary:
+	no macro.
+Unit <Segs_Const> synthesized.
+
+Synthesizing Unit <Devider>.
+    Related source file is "D:\Study\PLIS\PLIS-lw9\Game\Devider.vhd".
+    Found 1-bit register for signal <tct>.
+    Found 1-bit register for signal <Tact>.
+    Found 32-bit register for signal <count>.
+    Found 32-bit adder for signal <count[31]_GND_8_o_add_1_OUT> created at line 23.
+    Summary:
+	inferred   1 Adder/Subtractor(s).
+	inferred  34 D-type flip-flop(s).
+Unit <Devider> synthesized.
+
+Synthesizing Unit <CAP>.
+    Related source file is "D:\Study\PLIS\PLIS-lw9\Game\CAP.vhd".
+    Found 1-bit register for signal <S_OUT>.
+    Summary:
+	inferred   1 D-type flip-flop(s).
+Unit <CAP> synthesized.
+
+Synthesizing Unit <WIN_CHECK>.
+    Related source file is "D:\Study\PLIS\PLIS-lw9\Game\WIN_CHECK.vhd".
+    Summary:
+	no macro.
+Unit <WIN_CHECK> synthesized.
+
+Synthesizing Unit <Game_Calc>.
+    Related source file is "D:\Study\PLIS\PLIS-lw9\Game\Game_Calc.vhd".
+WARNING:Xst:647 - Input <RST> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+    Found 4-bit register for signal <DB_OUT>.
+    Found 4-bit subtractor for signal <GND_13_o_GND_13_o_sub_1_OUT<3:0>> created at line 20.
+    Summary:
+	inferred   1 Adder/Subtractor(s).
+	inferred   4 D-type flip-flop(s).
+Unit <Game_Calc> synthesized.
+
+=========================================================================
+HDL Synthesis Report
+
+Macro Statistics
+# RAMs                                                 : 1
+ 16x8-bit single-port Read Only RAM                    : 1
+# Adders/Subtractors                                   : 2
+ 32-bit adder                                          : 1
+ 4-bit subtractor                                      : 1
+# Registers                                            : 6
+ 1-bit register                                        : 4
+ 32-bit register                                       : 1
+ 4-bit register                                        : 1
+
+=========================================================================
+
+=========================================================================
+*                       Advanced HDL Synthesis                          *
+=========================================================================
+
+WARNING:Xst:1290 - Hierarchical block <XLXI_7> is unconnected in block <Scheme>.
+   It will be removed from the design.
+WARNING:Xst:2973 - All outputs of instance <XLXI_7> of block <CAP> are unconnected in block <Scheme>. Underlying logic will be removed.
+
+Synthesizing (advanced) Unit <Devider>.
+The following registers are absorbed into counter <count>: 1 register on signal <count>.
+Unit <Devider> synthesized (advanced).
+
+Synthesizing (advanced) Unit <Number_Decoder>.
+INFO:Xst:3218 - HDL ADVISOR - The RAM <Mram_PIN_OUT> will be implemented on LUTs either because you have described an asynchronous read or because of currently unsupported block RAM features. If you have described an asynchronous read, making it synchronous would allow you to take advantage of available block RAM resources, for optimized device usage and improved timings. Please refer to your documentation for coding guidelines.
+    -----------------------------------------------------------------------
+    | ram_type           | Distributed                         |          |
+    -----------------------------------------------------------------------
+    | Port A                                                              |
+    |     aspect ratio   | 16-word x 8-bit                     |          |
+    |     weA            | connected to signal <GND>           | high     |
+    |     addrA          | connected to signal <DIGIT>         |          |
+    |     diA            | connected to signal <GND>           |          |
+    |     doA            | connected to signal <PIN_OUT>       |          |
+    -----------------------------------------------------------------------
+Unit <Number_Decoder> synthesized (advanced).
+
+Synthesizing (advanced) Unit <Scheme>.
+The following registers are absorbed into accumulator <XLXI_11/DB_OUT>: 1 register on signal <XLXI_11/DB_OUT>.
+Unit <Scheme> synthesized (advanced).
+
+=========================================================================
+Advanced HDL Synthesis Report
+
+Macro Statistics
+# RAMs                                                 : 1
+ 16x8-bit single-port distributed Read Only RAM        : 1
+# Counters                                             : 1
+ 32-bit up counter                                     : 1
+# Accumulators                                         : 1
+ 4-bit down accumulator                                : 1
+# Registers                                            : 3
+ Flip-Flops                                            : 3
+
+=========================================================================
+
+=========================================================================
+*                         Low Level Synthesis                           *
+=========================================================================
+
+Optimizing unit <Scheme> ...
+
+Mapping all equations...
+Building and optimizing final netlist ...
+Found area constraint ratio of 100 (+ 5) on block Scheme, actual ratio is 0.
+
+Final Macro Processing ...
+
+=========================================================================
+Final Register Report
+
+Macro Statistics
+# Registers                                            : 39
+ Flip-Flops                                            : 39
+
+=========================================================================
+
+=========================================================================
+*                           Partition Report                            *
+=========================================================================
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+=========================================================================
+*                            Design Summary                             *
+=========================================================================
+
+Top Level Output File Name         : Scheme.ngc
+
+Primitive and Black Box Usage:
+------------------------------
+# BELS                             : 151
+#      GND                         : 1
+#      INV                         : 1
+#      LUT1                        : 31
+#      LUT2                        : 34
+#      LUT3                        : 2
+#      LUT4                        : 9
+#      LUT5                        : 2
+#      LUT6                        : 7
+#      MUXCY                       : 31
+#      VCC                         : 1
+#      XORCY                       : 32
+# FlipFlops/Latches                : 39
+#      FD                          : 39
+# Clock Buffers                    : 1
+#      BUFGP                       : 1
+# IO Buffers                       : 16
+#      IBUF                        : 3
+#      OBUF                        : 13
+
+Device utilization summary:
+---------------------------
+
+Selected Device : 6slx16csg324-3 
+
+
+Slice Logic Utilization: 
+ Number of Slice Registers:              38  out of  18224     0%  
+ Number of Slice LUTs:                   86  out of   9112     0%  
+    Number used as Logic:                86  out of   9112     0%  
+
+Slice Logic Distribution: 
+ Number of LUT Flip Flop pairs used:     86
+   Number with an unused Flip Flop:      48  out of     86    55%  
+   Number with an unused LUT:             0  out of     86     0%  
+   Number of fully used LUT-FF pairs:    38  out of     86    44%  
+   Number of unique control sets:         3
+
+IO Utilization: 
+ Number of IOs:                          18
+ Number of bonded IOBs:                  17  out of    232     7%  
+    IOB Flip Flops/Latches:               1
+
+Specific Feature Utilization:
+ Number of BUFG/BUFGCTRLs:                1  out of     16     6%  
+
+---------------------------
+Partition Resource Summary:
+---------------------------
+
+  No Partitions were found in this design.
+
+---------------------------
+
+
+=========================================================================
+Timing Report
+
+NOTE: THESE TIMING NUMBERS ARE ONLY A SYNTHESIS ESTIMATE.
+      FOR ACCURATE TIMING INFORMATION PLEASE REFER TO THE TRACE REPORT
+      GENERATED AFTER PLACE-and-ROUTE.
+
+Clock Information:
+------------------
+-----------------------------------+------------------------+-------+
+Clock Signal                       | Clock buffer(FF name)  | Load  |
+-----------------------------------+------------------------+-------+
+XLXI_5/Tact                        | NONE(XLXI_6/S_OUT)     | 1     |
+XLXI_6/S_OUT                       | NONE(XLXI_11/DB_OUT_0) | 4     |
+CLK                                | BUFGP                  | 34    |
+-----------------------------------+------------------------+-------+
+INFO:Xst:2169 - HDL ADVISOR - Some clock signals were not automatically buffered by XST with BUFG/BUFR resources. Please use the buffer_type constraint in order to insert these buffers to the clock signals to help prevent skew problems.
+
+Asynchronous Control Signals Information:
+----------------------------------------
+No asynchronous control signals found in this design
+
+Timing Summary:
+---------------
+Speed Grade: -3
+
+   Minimum period: 4.132ns (Maximum Frequency: 241.990MHz)
+   Minimum input arrival time before clock: 2.458ns
+   Maximum output required time after clock: 4.956ns
+   Maximum combinational path delay: No path found
+
+Timing Details:
+---------------
+All values displayed in nanoseconds (ns)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'XLXI_6/S_OUT'
+  Clock period: 1.979ns (frequency: 505.229MHz)
+  Total number of paths / destination ports: 10 / 4
+-------------------------------------------------------------------------
+Delay:               1.979ns (Levels of Logic = 1)
+  Source:            XLXI_11/DB_OUT_1 (FF)
+  Destination:       XLXI_11/DB_OUT_2 (FF)
+  Source Clock:      XLXI_6/S_OUT rising
+  Destination Clock: XLXI_6/S_OUT rising
+
+  Data Path: XLXI_11/DB_OUT_1 to XLXI_11/DB_OUT_2
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FD:C->Q              11   0.447   1.227  XLXI_11/DB_OUT_1 (XLXI_11/DB_OUT_1)
+     LUT5:I0->O            1   0.203   0.000  XLXI_11/Maccum_DB_OUT_xor<2>11 (Result<2>)
+     FD:D                      0.102          XLXI_11/DB_OUT_2
+    ----------------------------------------
+    Total                      1.979ns (0.752ns logic, 1.227ns route)
+                                       (38.0% logic, 62.0% route)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'CLK'
+  Clock period: 4.132ns (frequency: 241.990MHz)
+  Total number of paths / destination ports: 1619 / 34
+-------------------------------------------------------------------------
+Delay:               4.132ns (Levels of Logic = 3)
+  Source:            XLXI_5/count_16 (FF)
+  Destination:       XLXI_5/tct (FF)
+  Source Clock:      CLK rising
+  Destination Clock: CLK rising
+
+  Data Path: XLXI_5/count_16 to XLXI_5/tct
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FD:C->Q               2   0.447   0.961  XLXI_5/count_16 (XLXI_5/count_16)
+     LUT5:I0->O            2   0.203   0.961  XLXI_5/GND_8_o_count[31]_equal_1_o<31>2 (XLXI_5/GND_8_o_count[31]_equal_1_o<31>1)
+     LUT6:I1->O           18   0.203   1.050  XLXI_5/GND_8_o_count[31]_equal_1_o<31>7 (XLXI_5/GND_8_o_count[31]_equal_1_o)
+     LUT2:I1->O            1   0.205   0.000  XLXI_5/count_0_rstpot (XLXI_5/count_0_rstpot)
+     FD:D                      0.102          XLXI_5/count_0
+    ----------------------------------------
+    Total                      4.132ns (1.160ns logic, 2.972ns route)
+                                       (28.1% logic, 71.9% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'XLXI_5/Tact'
+  Total number of paths / destination ports: 1 / 1
+-------------------------------------------------------------------------
+Offset:              1.903ns (Levels of Logic = 1)
+  Source:            E (PAD)
+  Destination:       XLXI_6/S_OUT (FF)
+  Destination Clock: XLXI_5/Tact rising
+
+  Data Path: E to XLXI_6/S_OUT
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O             1   1.222   0.579  E_IBUF (E_IBUF)
+     FD:D                      0.102          XLXI_6/S_OUT
+    ----------------------------------------
+    Total                      1.903ns (1.324ns logic, 0.579ns route)
+                                       (69.6% logic, 30.4% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'XLXI_6/S_OUT'
+  Total number of paths / destination ports: 7 / 4
+-------------------------------------------------------------------------
+Offset:              2.458ns (Levels of Logic = 2)
+  Source:            DB_IN<0> (PAD)
+  Destination:       XLXI_11/DB_OUT_1 (FF)
+  Destination Clock: XLXI_6/S_OUT rising
+
+  Data Path: DB_IN<0> to XLXI_11/DB_OUT_1
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O             4   1.222   0.931  DB_IN_0_IBUF (DB_IN_0_IBUF)
+     LUT6:I2->O            1   0.203   0.000  XLXI_11/Maccum_DB_OUT_xor<3>11 (Result<3>)
+     FD:D                      0.102          XLXI_11/DB_OUT_3
+    ----------------------------------------
+    Total                      2.458ns (1.527ns logic, 0.931ns route)
+                                       (62.1% logic, 37.9% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'XLXI_6/S_OUT'
+  Total number of paths / destination ports: 32 / 8
+-------------------------------------------------------------------------
+Offset:              4.956ns (Levels of Logic = 2)
+  Source:            XLXI_11/DB_OUT_0 (FF)
+  Destination:       DIGIT_OUT<7> (PAD)
+  Source Clock:      XLXI_6/S_OUT rising
+
+  Data Path: XLXI_11/DB_OUT_0 to DIGIT_OUT<7>
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FD:C->Q              12   0.447   1.156  XLXI_11/DB_OUT_0 (XLXI_11/DB_OUT_0)
+     LUT4:I0->O            1   0.203   0.579  XLXI_2/Mram_PIN_OUT51 (DIGIT_OUT_5_OBUF)
+     OBUF:I->O                 2.571          DIGIT_OUT_5_OBUF (DIGIT_OUT<5>)
+    ----------------------------------------
+    Total                      4.956ns (3.221ns logic, 1.735ns route)
+                                       (65.0% logic, 35.0% route)
+
+=========================================================================
+
+Cross Clock Domains Report:
+--------------------------
+
+Clock to Setup on destination clock CLK
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+CLK            |    4.132|         |         |         |
+---------------+---------+---------+---------+---------+
+
+Clock to Setup on destination clock XLXI_6/S_OUT
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+XLXI_6/S_OUT   |    1.979|         |         |         |
+---------------+---------+---------+---------+---------+
+
+=========================================================================
+
+
+Total REAL time to Xst completion: 4.00 secs
+Total CPU time to Xst completion: 4.08 secs
+ 
+--> 
+
+Total memory usage is 4502276 kilobytes
+
+Number of errors   :    0 (   0 filtered)
+Number of warnings :    6 (   0 filtered)
+Number of infos    :    2 (   0 filtered)
+

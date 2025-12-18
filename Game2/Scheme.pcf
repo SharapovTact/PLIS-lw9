@@ -1,0 +1,14 @@
+//! **************************************************************************
+// Written by: Map P.20131013 on Fri Dec 19 01:51:41 2025
+//! **************************************************************************
+
+SCHEMATIC START;
+COMP "DB_OUT<0>" LOCATE = SITE "M11" LEVEL 1;
+COMP "DB_OUT<1>" LOCATE = SITE "N11" LEVEL 1;
+COMP "DB_OUT<2>" LOCATE = SITE "R11" LEVEL 1;
+COMP "DB_OUT<3>" LOCATE = SITE "T11" LEVEL 1;
+COMP "E" LOCATE = SITE "N8" LEVEL 1;
+PIN E_pin<0> = BEL "E" PINNAME PAD;
+PIN "E_pin<0>" CLOCK_DEDICATED_ROUTE = FALSE;
+SCHEMATIC END;
+

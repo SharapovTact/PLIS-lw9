@@ -1,0 +1,8 @@
+INTSTYLE=ise
+INFILE=D:\Study\PLIS\PLIS-lw9\D-Trigger\D_Trigger.ncd
+OUTFILE=D:\Study\PLIS\PLIS-lw9\D-Trigger\D_Trigger.bit
+FAMILY=Spartan6
+PART=xc6slx16-3csg324
+WORKINGDIR=D:\Study\PLIS\PLIS-lw9\D-Trigger
+LICENSE=WebPack
+USER_INFO=__0_0_0

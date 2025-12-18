@@ -1,0 +1,5 @@
+vhdl work "Reg4.vhd"
+vhdl work "Decounter.vhd"
+verilog work "Scheme.vf"
+vhdl work "test.vhd"
+verilog work "C:/Xilinx/14.7/ISE_DS/ISE//verilog/src/glbl.v"

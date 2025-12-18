@@ -1,0 +1,2 @@
+vhdtdtfi -lib work Segs_Const.vhd -prj Game -o Segs_Const.spl -module Segs_Const -template C:/Xilinx/14.7/ISE_DS/ISE//data/splfile.tft -deleteonerror 
+spl2sym -intstyle ise -family spartan6 Segs_Const.spl D:/Study/PLIS/PLIS-lw9/Game/Segs_Const.sym 

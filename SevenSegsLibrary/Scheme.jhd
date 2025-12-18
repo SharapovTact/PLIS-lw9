@@ -1,0 +1,11 @@
+MODULE Scheme
+	SUBMODULE Multiplexer_of_numbers
+		INSTANCE XLXI_3
+	SUBMODULE Number_decoder
+		INSTANCE XLXI_5
+	SUBMODULE Digit_decoder
+		INSTANCE XLXI_6
+	SUBMODULE Num_demultiplexer
+		INSTANCE XLXI_8
+	SUBMODULE Divider
+		INSTANCE XLXI_11

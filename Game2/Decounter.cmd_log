@@ -1,0 +1,36 @@
+vhdtdtfi -lib work Decounter.vhd -prj Game2 -o Decounter.spl -module Decounter -template C:/Xilinx/14.7/ISE_DS/ISE//data/splfile.tft -deleteonerror 
+spl2sym -intstyle ise -family spartan6 Decounter.spl D:/Study/PLIS/PLIS-lw9/Game2/Decounter.sym 
+vhdtdtfi -lib work Decounter.vhd -prj Game2 -o Decounter.spl -module Decounter -template C:/Xilinx/14.7/ISE_DS/ISE//data/splfile.tft -deleteonerror 
+spl2sym -intstyle ise -family spartan6 Decounter.spl D:/Study/PLIS/PLIS-lw9/Game2/Decounter.sym 
+vhdtdtfi -lib work Decounter.vhd -prj Game2 -o Decounter.spl -module Decounter -template C:/Xilinx/14.7/ISE_DS/ISE//data/splfile.tft -deleteonerror 
+spl2sym -intstyle ise -family spartan6 Decounter.spl D:/Study/PLIS/PLIS-lw9/Game2/Decounter.sym 
+vhdtdtfi -lib work Decounter.vhd -prj Game2 -o Decounter.spl -module Decounter -template C:/Xilinx/14.7/ISE_DS/ISE//data/splfile.tft -deleteonerror 
+spl2sym -intstyle ise -family spartan6 Decounter.spl D:/Study/PLIS/PLIS-lw9/Game2/Decounter.sym 
+vhdtdtfi -lib work Decounter.vhd -prj Game2 -o Decounter.spl -module Decounter -template C:/Xilinx/14.7/ISE_DS/ISE//data/splfile.tft -deleteonerror 
+spl2sym -intstyle ise -family spartan6 Decounter.spl D:/Study/PLIS/PLIS-lw9/Game2/Decounter.sym 
+vhdtdtfi -lib work Decounter.vhd -prj Game2 -o Decounter.spl -module Decounter -template C:/Xilinx/14.7/ISE_DS/ISE//data/splfile.tft -deleteonerror 
+spl2sym -intstyle ise -family spartan6 Decounter.spl D:/Study/PLIS/PLIS-lw9/Game2/Decounter.sym 
+vhdtdtfi -lib work Decounter.vhd -prj Game2 -o Decounter.spl -module Decounter -template C:/Xilinx/14.7/ISE_DS/ISE//data/splfile.tft -deleteonerror 
+spl2sym -intstyle ise -family spartan6 Decounter.spl D:/Study/PLIS/PLIS-lw9/Game2/Decounter.sym 
+vhdtdtfi -lib work Decounter.vhd -prj Game2 -o Decounter.spl -module Decounter -template C:/Xilinx/14.7/ISE_DS/ISE//data/splfile.tft -deleteonerror 
+spl2sym -intstyle ise -family spartan6 Decounter.spl D:/Study/PLIS/PLIS-lw9/Game2/Decounter.sym 
+vhdtdtfi -lib work Decounter.vhd -prj Game2 -o Decounter.spl -module Decounter -template C:/Xilinx/14.7/ISE_DS/ISE//data/splfile.tft -deleteonerror 
+spl2sym -intstyle ise -family spartan6 Decounter.spl D:/Study/PLIS/PLIS-lw9/Game2/Decounter.sym 
+vhdtdtfi -lib work Decounter.vhd -prj Game2 -o Decounter.spl -module Decounter -template C:/Xilinx/14.7/ISE_DS/ISE//data/splfile.tft -deleteonerror 
+spl2sym -intstyle ise -family spartan6 Decounter.spl D:/Study/PLIS/PLIS-lw9/Game2/Decounter.sym 
+vhdtdtfi -lib work Decounter.vhd -prj Game2 -o Decounter.spl -module Decounter -template C:/Xilinx/14.7/ISE_DS/ISE//data/splfile.tft -deleteonerror 
+spl2sym -intstyle ise -family spartan6 Decounter.spl D:/Study/PLIS/PLIS-lw9/Game2/Decounter.sym 
+vhdtdtfi -lib work Decounter.vhd -prj Game2 -o Decounter.spl -module Decounter -template C:/Xilinx/14.7/ISE_DS/ISE//data/splfile.tft -deleteonerror 
+spl2sym -intstyle ise -family spartan6 Decounter.spl D:/Study/PLIS/PLIS-lw9/Game2/Decounter.sym 
+vhdtdtfi -lib work Decounter.vhd -prj Game2 -o Decounter.spl -module Decounter -template C:/Xilinx/14.7/ISE_DS/ISE//data/splfile.tft -deleteonerror 
+spl2sym -intstyle ise -family spartan6 Decounter.spl D:/Study/PLIS/PLIS-lw9/Game2/Decounter.sym 
+vhdtdtfi -lib work Decounter.vhd -prj Game2 -o Decounter.spl -module Decounter -template C:/Xilinx/14.7/ISE_DS/ISE//data/splfile.tft -deleteonerror 
+spl2sym -intstyle ise -family spartan6 Decounter.spl D:/Study/PLIS/PLIS-lw9/Game2/Decounter.sym 
+vhdtdtfi -lib work Decounter.vhd -prj Game2 -o Decounter.spl -module Decounter -template C:/Xilinx/14.7/ISE_DS/ISE//data/splfile.tft -deleteonerror 
+spl2sym -intstyle ise -family spartan6 Decounter.spl D:/Study/PLIS/PLIS-lw9/Game2/Decounter.sym 
+vhdtdtfi -lib work Decounter.vhd -prj Game2 -o Decounter.spl -module Decounter -template C:/Xilinx/14.7/ISE_DS/ISE//data/splfile.tft -deleteonerror 
+spl2sym -intstyle ise -family spartan6 Decounter.spl D:/Study/PLIS/PLIS-lw9/Game2/Decounter.sym 
+vhdtdtfi -lib work Decounter.vhd -prj Game2 -o Decounter.spl -module Decounter -template C:/Xilinx/14.7/ISE_DS/ISE//data/splfile.tft -deleteonerror 
+spl2sym -intstyle ise -family spartan6 Decounter.spl D:/Study/PLIS/PLIS-lw9/Game2/Decounter.sym 
+vhdtdtfi -lib work Decounter.vhd -prj Game2 -o Decounter.spl -module Decounter -template C:/Xilinx/14.7/ISE_DS/ISE//data/splfile.tft -deleteonerror 
+spl2sym -intstyle ise -family spartan6 Decounter.spl D:/Study/PLIS/PLIS-lw9/Game2/Decounter.sym 

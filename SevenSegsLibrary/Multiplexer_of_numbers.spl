@@ -1,0 +1,9 @@
+[Inputs]
+=DIGIT[1:0]=
+=NUM_0[3:0]=
+=NUM_1[3:0]=
+=NUM_2[3:0]=
+=NUM_3[3:0]=
+[Outputs]
+=OUT_NUM[3:0]=
+[BiDir]

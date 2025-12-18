@@ -1,0 +1,6 @@
+vhdl work "Num_demultiplexer.vhd"
+vhdl work "Number_decoder.vhd"
+vhdl work "Interchange.vhd"
+vhdl work "Divider.vhd"
+vhdl work "Digit_decoder.vhd"
+verilog work "Scheme.vf"

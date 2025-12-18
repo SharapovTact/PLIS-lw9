@@ -1,0 +1,5 @@
+[Inputs]
+=DIGIT[3:0]=
+[Outputs]
+=PINOUT[7:0]=
+[BiDir]

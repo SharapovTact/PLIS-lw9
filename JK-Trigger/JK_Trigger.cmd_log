@@ -1,0 +1,12 @@
+xst -intstyle ise -ifn "D:/Study/PLIS/PLIS-lw9/JK-Trigger/JK_Trigger.xst" -ofn "D:/Study/PLIS/PLIS-lw9/JK-Trigger/JK_Trigger.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc6slx16-csg324-3 JK_Trigger.ngc JK_Trigger.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o JK_Trigger_map.ncd JK_Trigger.ngd JK_Trigger.pcf 
+par -w -intstyle ise -ol high -mt off JK_Trigger_map.ncd JK_Trigger.ncd JK_Trigger.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml JK_Trigger.twx JK_Trigger.ncd -o JK_Trigger.twr JK_Trigger.pcf 
+bitgen -intstyle ise -f JK_Trigger.ut JK_Trigger.ncd 
+xst -intstyle ise -ifn "D:/Study/PLIS/PLIS-lw9/JK-Trigger/JK_Trigger.xst" -ofn "D:/Study/PLIS/PLIS-lw9/JK-Trigger/JK_Trigger.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Config.ucf -p xc6slx16-csg324-3 JK_Trigger.ngc JK_Trigger.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o JK_Trigger_map.ncd JK_Trigger.ngd JK_Trigger.pcf 
+par -w -intstyle ise -ol high -mt off JK_Trigger_map.ncd JK_Trigger.ncd JK_Trigger.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml JK_Trigger.twx JK_Trigger.ncd -o JK_Trigger.twr JK_Trigger.pcf -ucf Config.ucf 
+bitgen -intstyle ise -f JK_Trigger.ut JK_Trigger.ncd 

@@ -1,0 +1,3 @@
+vhdl work "T_Trigger.vhd"
+vhdl work "Divider.vhd"
+verilog work "Scheme.vf"

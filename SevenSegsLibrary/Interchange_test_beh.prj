@@ -1,0 +1,2 @@
+vhdl work "Digit_decoder.vhd"
+vhdl work "Digit_decoder_test.vhd"

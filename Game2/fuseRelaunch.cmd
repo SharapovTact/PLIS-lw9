@@ -1,0 +1,1 @@
+-intstyle "ise" -incremental -lib "unisims_ver" -lib "unimacro_ver" -lib "xilinxcorelib_ver" -lib "secureip" -o "D:/Study/PLIS/PLIS-lw9/Game2/Scheme_Scheme_sch_tb_isim_beh.exe" -prj "D:/Study/PLIS/PLIS-lw9/Game2/Scheme_Scheme_sch_tb_beh.prj" "work.Scheme_Scheme_sch_tb" "work.glbl" 

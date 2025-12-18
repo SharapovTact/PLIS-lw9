@@ -1,0 +1,4 @@
+vhdtdtfi -lib work IVERTOR_7_to_0.vhd -prj SevenSegsLibrary -o IVERTOR_7_to_0.spl -module IVERTOR_7_to_0 -template C:/Xilinx/14.7/ISE_DS/ISE//data/splfile.tft -deleteonerror 
+spl2sym -intstyle ise -family spartan6 IVERTOR_7_to_0.spl D:/Study/PLIS/PLIS-lw8/SevenSegsLibrary/IVERTOR_7_to_0.sym 
+vhdtdtfi -lib work IVERTOR_7_to_0.vhd -prj SevenSegsLibrary -o IVERTOR_7_to_0.spl -module IVERTOR_7_to_0 -template C:/Xilinx/14.7/ISE_DS/ISE//data/splfile.tft -deleteonerror 
+spl2sym -intstyle ise -family spartan6 IVERTOR_7_to_0.spl D:/Study/PLIS/PLIS-lw8/SevenSegsLibrary/IVERTOR_7_to_0.sym 

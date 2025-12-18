@@ -1,0 +1,8 @@
+[Inputs]
+E
+RST
+=DB_IN[1:0]=
+=DBM_IN[3:0]=
+[Outputs]
+=DB_OUT[3:0]=
+[BiDir]

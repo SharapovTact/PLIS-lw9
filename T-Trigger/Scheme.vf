@@ -1,0 +1,44 @@
+////////////////////////////////////////////////////////////////////////////////
+// Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+////////////////////////////////////////////////////////////////////////////////
+//   ____  ____ 
+//  /   /\/   / 
+// /___/  \  /    Vendor: Xilinx 
+// \   \   \/     Version : 14.7
+//  \   \         Application : sch2hdl
+//  /   /         Filename : Scheme.vf
+// /___/   /\     Timestamp : 12/17/2025 04:18:57
+// \   \  /  \ 
+//  \___\/\___\ 
+//
+//Command: sch2hdl -intstyle ise -family spartan6 -verilog D:/Study/PLIS/PLIS-lw9/T-Trigger/Scheme.vf -w D:/Study/PLIS/PLIS-lw9/T-Trigger/Scheme.sch
+//Design Name: Scheme
+//Device: spartan6
+//Purpose:
+//    This verilog netlist is translated from an ECS schematic.It can be 
+//    synthesized and simulated, but it should not be modified. 
+//
+`timescale 1ns / 1ps
+
+module Scheme(Trig, 
+              V10, 
+              bQ, 
+              Q);
+
+    input Trig;
+    input V10;
+   output bQ;
+   output Q;
+   
+   wire XLXN_4;
+   wire XLXN_5;
+   
+   T_Trigger  XLXI_1 (.T(XLXN_4), 
+                     .bQ(bQ), 
+                     .Q(Q));
+   Divider  XLXI_2 (.V10(V10), 
+                   .Sign(XLXN_5));
+   AND2  XLXI_3 (.I0(XLXN_5), 
+                .I1(Trig), 
+                .O(XLXN_4));
+endmodule

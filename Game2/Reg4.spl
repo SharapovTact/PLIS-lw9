@@ -1,0 +1,6 @@
+[Inputs]
+E
+=DB[3:0]=
+[Outputs]
+=DOUT[3:0]=
+[BiDir]

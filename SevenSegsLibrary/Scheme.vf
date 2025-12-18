@@ -1,0 +1,63 @@
+////////////////////////////////////////////////////////////////////////////////
+// Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+////////////////////////////////////////////////////////////////////////////////
+//   ____  ____ 
+//  /   /\/   / 
+// /___/  \  /    Vendor: Xilinx 
+// \   \   \/     Version : 14.7
+//  \   \         Application : sch2hdl
+//  /   /         Filename : Scheme.vf
+// /___/   /\     Timestamp : 12/15/2025 15:12:02
+// \   \  /  \ 
+//  \___\/\___\ 
+//
+//Command: sch2hdl -intstyle ise -family spartan6 -verilog D:/Study/PLIS/PLIS-lw8/SevenSegsLibrary/Scheme.vf -w D:/Study/PLIS/PLIS-lw8/SevenSegsLibrary/Scheme.sch
+//Design Name: Scheme
+//Device: spartan6
+//Purpose:
+//    This verilog netlist is translated from an ECS schematic.It can be 
+//    synthesized and simulated, but it should not be modified. 
+//
+`timescale 1ns / 1ps
+
+module Scheme(DIGIT, 
+              ENABLE, 
+              NUMBER, 
+              Oxyllirator, 
+              ANOD, 
+              C);
+
+    input [1:0] DIGIT;
+    input ENABLE;
+    input [3:0] NUMBER;
+    input Oxyllirator;
+   output [3:0] ANOD;
+   output [7:0] C;
+   
+   wire [1:0] XLXN_1;
+   wire [3:0] XLXN_2;
+   wire [3:0] XLXN_8;
+   wire [3:0] XLXN_11;
+   wire [3:0] XLXN_12;
+   wire [3:0] XLXN_28;
+   
+   Multiplexer_of_numbers  XLXI_3 (.DIGIT(XLXN_1[1:0]), 
+                                  .NUM_0(XLXN_8[3:0]), 
+                                  .NUM_1(XLXN_12[3:0]), 
+                                  .NUM_2(XLXN_28[3:0]), 
+                                  .NUM_3(XLXN_11[3:0]), 
+                                  .OUT_NUM(XLXN_2[3:0]));
+   Number_decoder  XLXI_5 (.DIGIT(XLXN_2[3:0]), 
+                          .PINOUT(C[7:0]));
+   Digit_decoder  XLXI_6 (.DIGIT(XLXN_1[1:0]), 
+                         .ANOD(ANOD[3:0]));
+   Num_demultiplexer  XLXI_8 (.DIGIT(DIGIT[1:0]), 
+                             .ENABLE(ENABLE), 
+                             .NUMBER(NUMBER[3:0]), 
+                             .NUM_0(XLXN_8[3:0]), 
+                             .NUM_1(XLXN_12[3:0]), 
+                             .NUM_2(XLXN_28[3:0]), 
+                             .NUM_3(XLXN_11[3:0]));
+   Divider  XLXI_11 (.V10(Oxyllirator), 
+                    .Q(XLXN_1[1:0]));
+endmodule

@@ -1,0 +1,28 @@
+Command line:
+   RS_Trigger_XOR_RS_Trigger_XOR_sch_tb_isim_beh.exe
+     -simmode  gui
+     -simrunnum  1
+     -socket  65205
+
+Tue Dec 16 23:22:43 2025
+
+
+ Elaboration Time: 0.046875 sec
+
+ Current Memory Usage: 5155.27 Meg
+
+ Total Signals          : 54
+ Total Nets             : 48
+ Total Signal Drivers   : 15
+ Total Blocks           : 9
+ Total Primitive Blocks : 7
+ Total Processes        : 15
+ Total Traceable Variables  : 32
+ Total Scalar Nets and Variables : 612
+
+ Total Simulation Time: 0.0625 sec
+
+ Current Memory Usage: 4997.98 Meg
+
+Tue Dec 16 23:24:04 2025
+

@@ -1,0 +1,8 @@
+vhdl work "WIN_CHECK.vhd"
+vhdl work "Segs_Const.vhd"
+vhdl work "Number_Decoder.vhd"
+vhdl work "Devider.vhd"
+vhdl work "CAP.vhd"
+verilog work "Scheme.vf"
+vhdl work "test_scheme.vhd"
+verilog work "C:/Xilinx/14.7/ISE_DS/ISE//verilog/src/glbl.v"

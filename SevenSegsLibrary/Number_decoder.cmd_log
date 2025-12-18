@@ -1,0 +1,2 @@
+vhdtdtfi -lib work Number_decoder.vhd -prj SevenSegsLibrary -o Number_decoder.spl -module Number_decoder -template C:/Xilinx/14.7/ISE_DS/ISE//data/splfile.tft -deleteonerror 
+spl2sym -intstyle ise -family spartan6 Number_decoder.spl D:/Study/PLIS/PLIS-lw8/SevenSegsLibrary/Number_decoder.sym 

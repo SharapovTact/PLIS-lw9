@@ -1,0 +1,41 @@
+////////////////////////////////////////////////////////////////////////////////
+// Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+////////////////////////////////////////////////////////////////////////////////
+//   ____  ____ 
+//  /   /\/   / 
+// /___/  \  /    Vendor: Xilinx 
+// \   \   \/     Version : 14.7
+//  \   \         Application : sch2hdl
+//  /   /         Filename : Scheme.vf
+// /___/   /\     Timestamp : 12/16/2025 23:47:27
+// \   \  /  \ 
+//  \___\/\___\ 
+//
+//Command: sch2hdl -intstyle ise -family spartan6 -verilog D:/Study/PLIS/PLIS-lw9/RS-Trigger-NAND/Scheme.vf -w D:/Study/PLIS/PLIS-lw9/RS-Trigger-NAND/Scheme.sch
+//Design Name: Scheme
+//Device: spartan6
+//Purpose:
+//    This verilog netlist is translated from an ECS schematic.It can be 
+//    synthesized and simulated, but it should not be modified. 
+//
+`timescale 1ns / 1ps
+
+module Scheme(R, 
+              S, 
+              Q);
+
+    input R;
+    input S;
+   output Q;
+   
+   wire XLXN_10;
+   wire Q_DUMMY;
+   
+   assign Q = Q_DUMMY;
+   NAND2B1  XLXI_1 (.I0(S), 
+                   .I1(XLXN_10), 
+                   .O(Q_DUMMY));
+   NAND2B1  XLXI_2 (.I0(R), 
+                   .I1(Q_DUMMY), 
+                   .O(XLXN_10));
+endmodule

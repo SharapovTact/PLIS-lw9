@@ -1,0 +1,2 @@
+vhdtdtfi -lib work Reg4.vhd -prj Game2 -o Reg4.spl -module Reg4 -template C:/Xilinx/14.7/ISE_DS/ISE//data/splfile.tft -deleteonerror 
+spl2sym -intstyle ise -family spartan6 Reg4.spl D:/Study/PLIS/PLIS-lw9/Game2/Reg4.sym 

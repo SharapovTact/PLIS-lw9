@@ -1,0 +1,44 @@
+////////////////////////////////////////////////////////////////////////////////
+// Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+////////////////////////////////////////////////////////////////////////////////
+//   ____  ____ 
+//  /   /\/   / 
+// /___/  \  /    Vendor: Xilinx 
+// \   \   \/     Version : 14.7
+//  \   \         Application : sch2hdl
+//  /   /         Filename : RS_Trigger_XOR.vf
+// /___/   /\     Timestamp : 12/16/2025 23:22:37
+// \   \  /  \ 
+//  \___\/\___\ 
+//
+//Command: sch2hdl -intstyle ise -family spartan6 -verilog D:/Study/PLIS/PLIS-lw9/RS-Trigger-NAND/RS_Trigger_XOR.vf -w D:/Study/PLIS/PLIS-lw9/RS-Trigger-NAND/RS_Trigger_XOR.sch
+//Design Name: RS_Trigger_XOR
+//Device: spartan6
+//Purpose:
+//    This verilog netlist is translated from an ECS schematic.It can be 
+//    synthesized and simulated, but it should not be modified. 
+//
+`timescale 1ns / 1ps
+
+module RS_Trigger_XOR(R, 
+                      S, 
+                      bQ, 
+                      Q);
+
+    input R;
+    input S;
+   output bQ;
+   output Q;
+   
+   wire bQ_DUMMY;
+   wire Q_DUMMY;
+   
+   assign bQ = bQ_DUMMY;
+   assign Q = Q_DUMMY;
+   NOR2  XLXI_3 (.I0(bQ_DUMMY), 
+                .I1(R), 
+                .O(Q_DUMMY));
+   NOR2  XLXI_4 (.I0(S), 
+                .I1(Q_DUMMY), 
+                .O(bQ_DUMMY));
+endmodule

@@ -1,0 +1,35 @@
+////////////////////////////////////////////////////////////////////////////////
+// Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+////////////////////////////////////////////////////////////////////////////////
+//   ____  ____ 
+//  /   /\/   / 
+// /___/  \  /    Vendor: Xilinx 
+// \   \   \/     Version : 14.7
+//  \   \         Application : sch2hdl
+//  /   /         Filename : Scheme.vf
+// /___/   /\     Timestamp : 12/19/2025 01:51:27
+// \   \  /  \ 
+//  \___\/\___\ 
+//
+//Command: sch2hdl -intstyle ise -family spartan6 -verilog D:/Study/PLIS/PLIS-lw9/Game2/Scheme.vf -w D:/Study/PLIS/PLIS-lw9/Game2/Scheme.sch
+//Design Name: Scheme
+//Device: spartan6
+//Purpose:
+//    This verilog netlist is translated from an ECS schematic.It can be 
+//    synthesized and simulated, but it should not be modified. 
+//
+`timescale 1ns / 1ps
+
+module Scheme(E, 
+              DB_OUT);
+
+    input E;
+   output [3:0] DB_OUT;
+   
+   wire [3:0] DB_OUT_DUMMY;
+   
+   assign DB_OUT[3:0] = DB_OUT_DUMMY[3:0];
+   Decounter  XLXI_2 (.DB_IN(DB_OUT_DUMMY[3:0]), 
+                     .E(E), 
+                     .DB_OUT(DB_OUT_DUMMY[3:0]));
+endmodule

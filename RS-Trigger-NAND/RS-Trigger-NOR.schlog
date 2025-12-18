@@ -1,0 +1,29 @@
+select figure at 1211 886 8 -branches -sn=1
+select figure at 2682 1696 8 -branches -sn=1
+select figure at 1495 1016 8 -branches -sn=1
+add instance nor2 1440 944 R0 -sn=1
+add instance nor2 1440 1168 R0 -sn=1
+add autowire 1696 848 1856 848 8 -sn=1
+add autowire 1696 1072 1872 1072 8 -sn=1
+BeginGroup
+add iomarker 1856 848 0 Unknown Unknown -sn=1
+add iomarker 1872 1072 0 Unknown Unknown -sn=1
+EndGroup
+select figure at 1928 868 8 -branches -sn=1
+name net at 1696 848 8 Q -sn=1
+select figure at 1933 1053 8 -branches -sn=1
+name net at 1696 1072 8 bQ -sn=1
+add autowire 1744 848 1440 1040 8 -sn=1
+add autowire 1744 1072 1440 880 8 -sn=1
+add autowire 1440 816 1312 816 8 -sn=1
+add autowire 1440 1104 1328 1104 8 -sn=1
+BeginGroup
+add iomarker 1312 816 0 Unknown Unknown -sn=1
+add iomarker 1328 1104 0 Unknown Unknown -sn=1
+EndGroup
+select figure at 1227 823 8 -branches -sn=1
+name net at 1312 816 8 R -sn=1
+select figure at 1271 1101 8 -branches -sn=1
+name net at 1328 1104 8 S -sn=1
+select figure at 1747 1228 8 -branches -sn=1
+select figure at 979 938 8 -branches -sn=1

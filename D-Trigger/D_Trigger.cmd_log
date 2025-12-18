@@ -1,0 +1,12 @@
+xst -intstyle ise -ifn "D:/Study/PLIS/PLIS-lw9/D-Trigger/D_Trigger.xst" -ofn "D:/Study/PLIS/PLIS-lw9/D-Trigger/D_Trigger.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc6slx16-csg324-3 D_Trigger.ngc D_Trigger.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o D_Trigger_map.ncd D_Trigger.ngd D_Trigger.pcf 
+par -w -intstyle ise -ol high -mt off D_Trigger_map.ncd D_Trigger.ncd D_Trigger.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml D_Trigger.twx D_Trigger.ncd -o D_Trigger.twr D_Trigger.pcf 
+bitgen -intstyle ise -f D_Trigger.ut D_Trigger.ncd 
+xst -intstyle ise -ifn "D:/Study/PLIS/PLIS-lw9/D-Trigger/D_Trigger.xst" -ofn "D:/Study/PLIS/PLIS-lw9/D-Trigger/D_Trigger.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Config.ucf -p xc6slx16-csg324-3 D_Trigger.ngc D_Trigger.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o D_Trigger_map.ncd D_Trigger.ngd D_Trigger.pcf 
+par -w -intstyle ise -ol high -mt off D_Trigger_map.ncd D_Trigger.ncd D_Trigger.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml D_Trigger.twx D_Trigger.ncd -o D_Trigger.twr D_Trigger.pcf -ucf Config.ucf 
+bitgen -intstyle ise -f D_Trigger.ut D_Trigger.ncd 

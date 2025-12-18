@@ -1,0 +1,4 @@
+NET "Trig" LOC="C4";
+NET "Q" LOC="V16";
+NET "bQ" LOC="U16";
+NET "V10" LOC="V10";

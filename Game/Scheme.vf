@@ -1,0 +1,62 @@
+////////////////////////////////////////////////////////////////////////////////
+// Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+////////////////////////////////////////////////////////////////////////////////
+//   ____  ____ 
+//  /   /\/   / 
+// /___/  \  /    Vendor: Xilinx 
+// \   \   \/     Version : 14.7
+//  \   \         Application : sch2hdl
+//  /   /         Filename : Scheme.vf
+// /___/   /\     Timestamp : 12/19/2025 01:58:29
+// \   \  /  \ 
+//  \___\/\___\ 
+//
+//Command: sch2hdl -intstyle ise -family spartan6 -verilog D:/Study/PLIS/PLIS-lw9/Game/Scheme.vf -w D:/Study/PLIS/PLIS-lw9/Game/Scheme.sch
+//Design Name: Scheme
+//Device: spartan6
+//Purpose:
+//    This verilog netlist is translated from an ECS schematic.It can be 
+//    synthesized and simulated, but it should not be modified. 
+//
+`timescale 1ns / 1ps
+
+module Scheme(CLK, 
+              DB_IN, 
+              E, 
+              RST, 
+              DIGIT_OUT, 
+              Segs, 
+              Win);
+
+    input CLK;
+    input [1:0] DB_IN;
+    input E;
+    input RST;
+   output [7:0] DIGIT_OUT;
+   output [3:0] Segs;
+   output Win;
+   
+   wire XLXN_13;
+   wire [3:0] XLXN_29;
+   wire XLXN_32;
+   wire XLXN_33;
+   
+   Number_Decoder  XLXI_2 (.DIGIT(XLXN_29[3:0]), 
+                          .PIN_OUT(DIGIT_OUT[7:0]));
+   Segs_Const  XLXI_4 (.Segs(Segs[3:0]));
+   Devider  XLXI_5 (.CLK(CLK), 
+                   .Tact(XLXN_13));
+   CAP  XLXI_6 (.S_IN(E), 
+               .Tact(XLXN_13), 
+               .S_OUT(XLXN_33));
+   CAP  XLXI_7 (.S_IN(RST), 
+               .Tact(XLXN_13), 
+               .S_OUT(XLXN_32));
+   WIN_CHECK  XLXI_9 (.DIGIT(XLXN_29[3:0]), 
+                     .WIN(Win));
+   Game_Calc  XLXI_11 (.DBM_IN(XLXN_29[3:0]), 
+                      .DB_IN(DB_IN[1:0]), 
+                      .E(XLXN_33), 
+                      .RST(XLXN_32), 
+                      .DB_OUT(XLXN_29[3:0]));
+endmodule

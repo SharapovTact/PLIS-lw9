@@ -1,0 +1,4 @@
+vhdtdtfi -lib work Divider.vhd -prj T-Trigger -o Divider.spl -module Divider -template C:/Xilinx/14.7/ISE_DS/ISE//data/splfile.tft -deleteonerror 
+spl2sym -intstyle ise -family spartan6 Divider.spl D:/Study/PLIS/PLIS-lw9/T-Trigger/Divider.sym 
+vhdtdtfi -lib work Divider.vhd -prj T-Trigger -o Divider.spl -module Divider -template C:/Xilinx/14.7/ISE_DS/ISE//data/splfile.tft -deleteonerror 
+spl2sym -intstyle ise -family spartan6 Divider.spl D:/Study/PLIS/PLIS-lw9/T-Trigger/Divider.sym 

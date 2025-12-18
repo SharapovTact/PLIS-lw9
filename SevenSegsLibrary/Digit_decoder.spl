@@ -1,0 +1,5 @@
+[Inputs]
+=DIGIT[1:0]=
+[Outputs]
+=ANOD[3:0]=
+[BiDir]

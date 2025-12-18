@@ -1,0 +1,5 @@
+[Inputs]
+CLK
+[Outputs]
+Tact
+[BiDir]

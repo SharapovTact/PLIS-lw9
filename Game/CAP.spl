@@ -1,0 +1,6 @@
+[Inputs]
+S_IN
+Tact
+[Outputs]
+S_OUT
+[BiDir]
