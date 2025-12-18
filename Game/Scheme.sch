@@ -25,7 +25,7 @@
         <port polarity="Output" name="Win" />
         <port polarity="Input" name="DB_IN(1:0)" />
         <blockdef name="Game_Calc">
-            <timestamp>2025-12-18T22:58:14</timestamp>
+            <timestamp>2025-12-18T23:32:47</timestamp>
             <rect width="304" x="64" y="-256" height="256" />
             <line x2="0" y1="-224" y2="-224" x1="64" />
             <line x2="0" y1="-160" y2="-160" x1="64" />
@@ -64,7 +64,7 @@
             <line x2="384" y1="-96" y2="-96" x1="320" />
         </blockdef>
         <blockdef name="WIN_CHECK">
-            <timestamp>2025-12-18T20:0:18</timestamp>
+            <timestamp>2025-12-18T23:32:17</timestamp>
             <rect width="256" x="64" y="-64" height="64" />
             <rect width="64" x="0" y="-44" height="24" />
             <line x2="0" y1="-32" y2="-32" x1="64" />
@@ -95,7 +95,7 @@
             <blockpin signalname="XLXN_29(3:0)" name="DIGIT(3:0)" />
             <blockpin signalname="Win" name="WIN" />
         </block>
-        <block symbolname="Game_Calc" name="XLXI_11">
+        <block symbolname="Game_Calc" name="XLXI_12">
             <blockpin signalname="XLXN_33" name="E" />
             <blockpin signalname="XLXN_32" name="RST" />
             <blockpin signalname="DB_IN(1:0)" name="DB_IN(1:0)" />
@@ -181,7 +181,7 @@
             <wire x2="960" y1="608" y2="1072" x1="960" />
             <wire x2="1104" y1="1072" y2="1072" x1="960" />
         </branch>
-        <instance x="1104" y="1296" name="XLXI_11" orien="R0">
+        <instance x="1104" y="1296" name="XLXI_12" orien="R0">
         </instance>
     </sheet>
 </drawing>

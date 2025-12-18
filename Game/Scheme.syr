@@ -4,13 +4,13 @@ Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
 
 
 Total REAL time to Xst completion: 0.00 secs
-Total CPU time to Xst completion: 0.08 secs
+Total CPU time to Xst completion: 0.09 secs
  
 --> Parameter xsthdpdir set to xst
 
 
 Total REAL time to Xst completion: 0.00 secs
-Total CPU time to Xst completion: 0.08 secs
+Total CPU time to Xst completion: 0.09 secs
  
 --> Reading design: Scheme.prj
 
@@ -263,7 +263,7 @@ INFO:Xst:3218 - HDL ADVISOR - The RAM <Mram_PIN_OUT> will be implemented on LUTs
 Unit <Number_Decoder> synthesized (advanced).
 
 Synthesizing (advanced) Unit <Scheme>.
-The following registers are absorbed into accumulator <XLXI_11/DB_OUT>: 1 register on signal <XLXI_11/DB_OUT>.
+The following registers are absorbed into accumulator <XLXI_12/DB_OUT>: 1 register on signal <XLXI_12/DB_OUT>.
 Unit <Scheme> synthesized (advanced).
 
 =========================================================================
@@ -389,7 +389,7 @@ Clock Information:
 Clock Signal                       | Clock buffer(FF name)  | Load  |
 -----------------------------------+------------------------+-------+
 XLXI_5/Tact                        | NONE(XLXI_6/S_OUT)     | 1     |
-XLXI_6/S_OUT                       | NONE(XLXI_11/DB_OUT_0) | 4     |
+XLXI_6/S_OUT                       | NONE(XLXI_12/DB_OUT_0) | 4     |
 CLK                                | BUFGP                  | 34    |
 -----------------------------------+------------------------+-------+
 INFO:Xst:2169 - HDL ADVISOR - Some clock signals were not automatically buffered by XST with BUFG/BUFR resources. Please use the buffer_type constraint in order to insert these buffers to the clock signals to help prevent skew problems.
@@ -417,18 +417,18 @@ Timing constraint: Default period analysis for Clock 'XLXI_6/S_OUT'
   Total number of paths / destination ports: 10 / 4
 -------------------------------------------------------------------------
 Delay:               1.979ns (Levels of Logic = 1)
-  Source:            XLXI_11/DB_OUT_1 (FF)
-  Destination:       XLXI_11/DB_OUT_2 (FF)
+  Source:            XLXI_12/DB_OUT_1 (FF)
+  Destination:       XLXI_12/DB_OUT_2 (FF)
   Source Clock:      XLXI_6/S_OUT rising
   Destination Clock: XLXI_6/S_OUT rising
 
-  Data Path: XLXI_11/DB_OUT_1 to XLXI_11/DB_OUT_2
+  Data Path: XLXI_12/DB_OUT_1 to XLXI_12/DB_OUT_2
                                 Gate     Net
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
-     FD:C->Q              11   0.447   1.227  XLXI_11/DB_OUT_1 (XLXI_11/DB_OUT_1)
-     LUT5:I0->O            1   0.203   0.000  XLXI_11/Maccum_DB_OUT_xor<2>11 (Result<2>)
-     FD:D                      0.102          XLXI_11/DB_OUT_2
+     FD:C->Q              11   0.447   1.227  XLXI_12/DB_OUT_1 (XLXI_12/DB_OUT_1)
+     LUT5:I0->O            1   0.203   0.000  XLXI_12/Maccum_DB_OUT_xor<2>11 (Result<2>)
+     FD:D                      0.102          XLXI_12/DB_OUT_2
     ----------------------------------------
     Total                      1.979ns (0.752ns logic, 1.227ns route)
                                        (38.0% logic, 62.0% route)
@@ -482,16 +482,16 @@ Timing constraint: Default OFFSET IN BEFORE for Clock 'XLXI_6/S_OUT'
 -------------------------------------------------------------------------
 Offset:              2.458ns (Levels of Logic = 2)
   Source:            DB_IN<0> (PAD)
-  Destination:       XLXI_11/DB_OUT_1 (FF)
+  Destination:       XLXI_12/DB_OUT_1 (FF)
   Destination Clock: XLXI_6/S_OUT rising
 
-  Data Path: DB_IN<0> to XLXI_11/DB_OUT_1
+  Data Path: DB_IN<0> to XLXI_12/DB_OUT_1
                                 Gate     Net
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
      IBUF:I->O             4   1.222   0.931  DB_IN_0_IBUF (DB_IN_0_IBUF)
-     LUT6:I2->O            1   0.203   0.000  XLXI_11/Maccum_DB_OUT_xor<3>11 (Result<3>)
-     FD:D                      0.102          XLXI_11/DB_OUT_3
+     LUT6:I2->O            1   0.203   0.000  XLXI_12/Maccum_DB_OUT_xor<3>11 (Result<3>)
+     FD:D                      0.102          XLXI_12/DB_OUT_3
     ----------------------------------------
     Total                      2.458ns (1.527ns logic, 0.931ns route)
                                        (62.1% logic, 37.9% route)
@@ -501,15 +501,15 @@ Timing constraint: Default OFFSET OUT AFTER for Clock 'XLXI_6/S_OUT'
   Total number of paths / destination ports: 32 / 8
 -------------------------------------------------------------------------
 Offset:              4.956ns (Levels of Logic = 2)
-  Source:            XLXI_11/DB_OUT_0 (FF)
+  Source:            XLXI_12/DB_OUT_0 (FF)
   Destination:       DIGIT_OUT<7> (PAD)
   Source Clock:      XLXI_6/S_OUT rising
 
-  Data Path: XLXI_11/DB_OUT_0 to DIGIT_OUT<7>
+  Data Path: XLXI_12/DB_OUT_0 to DIGIT_OUT<7>
                                 Gate     Net
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
-     FD:C->Q              12   0.447   1.156  XLXI_11/DB_OUT_0 (XLXI_11/DB_OUT_0)
+     FD:C->Q              12   0.447   1.156  XLXI_12/DB_OUT_0 (XLXI_12/DB_OUT_0)
      LUT4:I0->O            1   0.203   0.579  XLXI_2/Mram_PIN_OUT51 (DIGIT_OUT_5_OBUF)
      OBUF:I->O                 2.571          DIGIT_OUT_5_OBUF (DIGIT_OUT<5>)
     ----------------------------------------
@@ -541,11 +541,11 @@ XLXI_6/S_OUT   |    1.979|         |         |         |
 
 
 Total REAL time to Xst completion: 4.00 secs
-Total CPU time to Xst completion: 4.08 secs
+Total CPU time to Xst completion: 3.76 secs
  
 --> 
 
-Total memory usage is 4502276 kilobytes
+Total memory usage is 4502020 kilobytes
 
 Number of errors   :    0 (   0 filtered)
 Number of warnings :    6 (   0 filtered)

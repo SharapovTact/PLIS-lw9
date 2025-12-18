@@ -1,7 +1,7 @@
 Release 14.7 par P.20131013 (nt64)
 Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
 
-DESKTOP-NAORT4C::  Fri Dec 19 01:58:46 2025
+DESKTOP-NAORT4C::  Fri Dec 19 02:33:18 2025
 
 par -w -intstyle ise -ol high -mt off Scheme_map.ncd Scheme.ncd Scheme.pcf 
 
@@ -102,13 +102,13 @@ WARNING:Par:288 - The signal RST_IBUF has no load.  PAR will not attempt to rout
 Starting Router
 
 
-Phase  1  : 243 unrouted;      REAL time: 2 secs 
+Phase  1  : 244 unrouted;      REAL time: 2 secs 
 
-Phase  2  : 194 unrouted;      REAL time: 2 secs 
+Phase  2  : 195 unrouted;      REAL time: 2 secs 
 
-Phase  3  : 20 unrouted;      REAL time: 2 secs 
+Phase  3  : 11 unrouted;      REAL time: 2 secs 
 
-Phase  4  : 20 unrouted; (Par is working to improve performance)     REAL time: 2 secs 
+Phase  4  : 11 unrouted; (Par is working to improve performance)     REAL time: 2 secs 
 
 Updating file: Scheme.ncd with current fully routed design.
 
@@ -144,11 +144,11 @@ Asterisk (*) preceding a constraint indicates it was not met.
   Constraint                                |    Check    | Worst Case |  Best Case | Timing |   Timing   
                                             |             |    Slack   | Achievable | Errors |    Score   
 ----------------------------------------------------------------------------------------------------------
-  Autotimespec constraint for clock net XLX | SETUP       |         N/A|     1.330ns|     N/A|           0
-  I_6/S_OUT                                 | HOLD        |     0.431ns|            |       0|           0
+  Autotimespec constraint for clock net XLX | SETUP       |         N/A|     1.322ns|     N/A|           0
+  I_6/S_OUT                                 | HOLD        |     0.433ns|            |       0|           0
 ----------------------------------------------------------------------------------------------------------
-  Autotimespec constraint for clock net CLK | SETUP       |         N/A|     3.920ns|     N/A|           0
-  _BUFGP                                    | HOLD        |     0.415ns|            |       0|           0
+  Autotimespec constraint for clock net CLK | SETUP       |         N/A|     3.820ns|     N/A|           0
+  _BUFGP                                    | HOLD        |     0.434ns|            |       0|           0
 ----------------------------------------------------------------------------------------------------------
 
 
@@ -166,10 +166,10 @@ All signals are completely routed.
 
 WARNING:Par:283 - There are 1 loadless signals in this design. This design will cause Bitgen to issue DRC warnings.
 
-Total REAL time to PAR completion: 2 secs 
-Total CPU time to PAR completion: 2 secs 
+Total REAL time to PAR completion: 3 secs 
+Total CPU time to PAR completion: 3 secs 
 
-Peak Memory Usage:  4479 MB
+Peak Memory Usage:  4481 MB
 
 Placer: Placement generated during map.
 Routing: Completed - No errors found.

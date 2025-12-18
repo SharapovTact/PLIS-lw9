@@ -1,5 +1,5 @@
-NET "E" LOC="M8";
-NET "RST" LOC="V9";
+NET "E" LOC="C4";
+NET "RST" LOC="B8";
 NET "CLK" LOC="V10";
 NET "DB_IN<0>" LOC="T10";
 NET "DB_IN<1>" LOC="T9";

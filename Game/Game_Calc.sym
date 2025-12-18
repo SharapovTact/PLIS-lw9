@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <symbol version="7" name="Game_Calc">
     <symboltype>BLOCK</symboltype>
-    <timestamp>2025-12-18T22:58:14</timestamp>
+    <timestamp>2025-12-18T23:32:47</timestamp>
     <pin polarity="Input" x="0" y="-224" name="E" />
     <pin polarity="Input" x="0" y="-160" name="RST" />
     <pin polarity="Input" x="0" y="-96" name="DB_IN(1:0)" />

@@ -14,10 +14,12 @@ architecture Behavioral of Game_Calc is
 signal A : STD_LOGIC_VECTOR (3 downto 0) := DBM_IN;
 signal B : STD_LOGIC_VECTOR (1 downto 0) := DB_IN;
 begin
-	process(E)
+	process(E, RST)
 	begin
 		if (E'event and E = '1') then
 			DB_OUT <= std_logic_vector(unsigned(A) - unsigned(B));
+		elsif (RST'event and RST = '1') then
+			 DB_OUT <= "1011";
 		end if;
 	end process;
 

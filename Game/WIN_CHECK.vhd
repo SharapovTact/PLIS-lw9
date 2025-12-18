@@ -27,7 +27,7 @@ use IEEE.STD_LOGIC_1164.ALL;
 -- Uncomment the following library declaration if instantiating
 -- any Xilinx primitives in this code.
 --library UNISIM;
---use UNISIM.VComponents.all;
+--use UNISIM.VComponents.a
 
 entity WIN_CHECK is
     Port ( DIGIT : in  STD_LOGIC_VECTOR (3 downto 0);
@@ -39,7 +39,7 @@ architecture Behavioral of WIN_CHECK is
 begin
 	process(DIGIT)
 	begin
-		if (DIGIT = "0000") then
+		if (DIGIT = "0000" OR DIGIT = "1110" OR DIGIT = "1111") then
 			WIN <= '1';
 		else
 			WIN <= '0';

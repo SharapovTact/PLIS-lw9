@@ -1,5 +1,5 @@
 //! **************************************************************************
-// Written by: Map P.20131013 on Fri Dec 19 01:58:44 2025
+// Written by: Map P.20131013 on Fri Dec 19 02:33:16 2025
 //! **************************************************************************
 
 SCHEMATIC START;
@@ -8,9 +8,9 @@ COMP "Segs<3>" LOCATE = SITE "N16" LEVEL 1;
 COMP "Win" LOCATE = SITE "U16" LEVEL 1;
 COMP "DIGIT_OUT<0>" LOCATE = SITE "M13" LEVEL 1;
 COMP "DIGIT_OUT<1>" LOCATE = SITE "L14" LEVEL 1;
-COMP "E" LOCATE = SITE "M8" LEVEL 1;
+COMP "E" LOCATE = SITE "C4" LEVEL 1;
 COMP "DIGIT_OUT<2>" LOCATE = SITE "N14" LEVEL 1;
-COMP "RST" LOCATE = SITE "V9" LEVEL 1;
+COMP "RST" LOCATE = SITE "B8" LEVEL 1;
 COMP "DIGIT_OUT<3>" LOCATE = SITE "M14" LEVEL 1;
 COMP "DIGIT_OUT<4>" LOCATE = SITE "U18" LEVEL 1;
 COMP "DIGIT_OUT<5>" LOCATE = SITE "U17" LEVEL 1;

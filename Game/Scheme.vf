@@ -7,7 +7,7 @@
 // \   \   \/     Version : 14.7
 //  \   \         Application : sch2hdl
 //  /   /         Filename : Scheme.vf
-// /___/   /\     Timestamp : 12/19/2025 01:58:29
+// /___/   /\     Timestamp : 12/19/2025 02:33:01
 // \   \  /  \ 
 //  \___\/\___\ 
 //
@@ -54,7 +54,7 @@ module Scheme(CLK,
                .S_OUT(XLXN_32));
    WIN_CHECK  XLXI_9 (.DIGIT(XLXN_29[3:0]), 
                      .WIN(Win));
-   Game_Calc  XLXI_11 (.DBM_IN(XLXN_29[3:0]), 
+   Game_Calc  XLXI_12 (.DBM_IN(XLXN_29[3:0]), 
                       .DB_IN(DB_IN[1:0]), 
                       .E(XLXN_33), 
                       .RST(XLXN_32), 
